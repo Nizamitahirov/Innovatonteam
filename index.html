@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Təqdimat | İnnovasiya və Sistem Davamlılığı</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+
+    <canvas id="matrix-canvas"></canvas>
+
+    <div class="presentation-container">
+        <header>
+            <div class="logo" data-key="dept_name">İnnovasiya və Sistem Davamlılığı</div>
+            <nav>
+                <a href="#hero" class="nav-link active" data-key="nav_hero">Başlanğıc</a>
+                <a href="#about" class="nav-link" data-key="nav_about">Haqqımızda</a>
+                <a href="#value" class="nav-link" data-key="nav_value">Dəyərimiz</a>
+                <a href="#approach" class="nav-link" data-key="nav_approach">Yanaşmamız</a>
+                <a href="#tech" class="nav-link" data-key="nav_tech">Texnologiyalar</a>
+                <a href="#team" class="nav-link" data-key="nav_team">Komandamız</a>
+            </nav>
+            <div class="controls">
+                <div class="lang-switcher">
+                    <span class="lang-az active">AZ</span>
+                    <label class="switch"><input type="checkbox" id="lang-toggle"><span class="slider round"></span></label>
+                    <span class="lang-en">EN</span>
+                </div>
+                <div class="theme-switcher">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    <label class="switch"><input type="checkbox" id="theme-toggle" checked><span class="slider round"></span></label>
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- SLIDE 1: HERO -->
+            <section id="hero" class="slide active">
+                <div class="slide-content">
+                    <h1 data-key="hero_title">Dəyişikliyi idarə edirik. <br> Davamlılığı təmin edirik.</h1>
+                    <p class="purpose-statement" data-key="purpose_statement">Biznesimizin rəqəmsal potensialını tam reallaşdırmaq, davamlı innovasiyalarla gələcəyə hazırlamaq və texnoloji ekosistemimizin dayanıqlığını təmin edərək dayanıqlı inkişafa təkan vermək üçün varıq.</p>
+                </div>
+            </section>
+
+            <!-- SLIDE 2: ABOUT (VISION & MISSION) -->
+            <section id="about" class="slide">
+                <div class="slide-content about-content">
+                    <div class="card vision-card">
+                        <div class="card-icon">
+                            <svg class="icon" viewBox="0 0 24 24"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path clip-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12 3.75c4.97 0 9.185 3.223 10.675 7.69.121.362.121.745 0 1.107-1.49 4.467-5.705 7.693-10.675 7.693-4.972 0-9.189-3.226-10.677-7.692a1.11 1.11 0 010-1.107zM12 17.25a5.25 5.25 0 100-10.5 5.25 5.25 0 000 10.5z" fill-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 data-key="vision_title">Vizyonumuz</h3>
+                        <p data-key="vision_text">Proseslərin ağıllı avtomatlaşdırıldığı, qərarların data əsasında verildiyi və texnoloji innovasiyaların biznes strategiyamızın mərkəzində dayandığı, sənayedə rəqəmsal mükəmməllik etalonu olan bir şirkətə çevrilmək.</p>
+                    </div>
+                    <div class="card mission-card">
+                        <div class="card-icon">
+                            <svg class="icon" viewBox="0 0 24 24"><path d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.875L6 12z"></path></svg>
+                        </div>
+                        <h3 data-key="mission_title">Missiyamız</h3>
+                        <ul>
+                            <li data-key="mission_1"><strong>İnnovasiya:</strong> Səmərəliliyi artırmaq üçün qabaqcıl texnologiyaları araşdırmaq, tətbiq etmək.</li>
+                            <li data-key="mission_2"><strong>Davamlılıq:</strong> Kritik sistemlərin fasiləsiz, təhlükəsiz və səmərəli işini təmin etmək.</li>
+                            <li data-key="mission_3"><strong>Tərəfdaşlıq:</strong> Biznes hədəflərinə çatmaq üçün departamentlərə xüsusi rəqəmsal həllər təqdim etmək.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 3: VALUE PROPOSITION -->
+            <section id="value" class="slide">
+                <div class="slide-content">
+                    <h2 data-key="value_title">Şirkətə Töhfəmiz</h2>
+                    <div class="value-grid">
+                        <div class="value-item">
+                             <div class="card-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.25 7.5l.406 1.423a2.25 2.25 0 001.638 1.638L21.75 11l-1.423.406a2.25 2.25 0 00-1.638 1.638L18.25 14.5l-.406-1.423a2.25 2.25 0 00-1.638-1.638L14.75 11l1.423-.406a2.25 2.25 0 001.638-1.638L18.25 7.5z"></path></svg></div>
+                            <h4 data-key="value_item1_title">Artan Səmərəlilik</h4>
+                            <p data-key="value_item1_text">Rutin prosesləri avtomatlaşdıraraq əməkdaşların strateji işlərə fokuslanması üçün vaxt qazandırırıq.</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="card-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M10.5 6a7.5 7.5 0 100 15 7.5 7.5 0 000-15zM21 21l-5.197-5.197"></path></svg></div>
+                            <h4 data-key="value_item2_title">Ağıllı Qərarlar</h4>
+                            <p data-key="value_item2_text">Data analizi və vizuallaşdırma ilə rəhbərliyi daha dəqiq və sürətli qərarlar üçün təmin edirik.</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="card-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.286z"></path></svg></div>
+                            <h4 data-key="value_item3_title">Əməliyyat Dayanıqlığı</h4>
+                            <p data-key="value_item3_text">Kritik sistemlərin fasiləsiz işini təmin edərək biznes risklərini minimuma endiririk.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- SLIDE 4: OUR APPROACH -->
+            <section id="approach" class="slide">
+                <div class="slide-content">
+                    <h2 data-key="approach_title">Bizim Yanaşmamız: 4-Mərhələli Proses</h2>
+                    <div class="approach-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h4 data-key="step1_title">Kəşfiyyat və Analiz</h4>
+                            <p data-key="step1_text">Biznes ehtiyaclarını dərindən anlayır, mövcud prosesləri təhlil edir və təkmilləşdirmə imkanlarını müəyyən edirik.</p>
+                        </div>
+                        <div class="step-arrow">→</div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h4 data-key="step2_title">Strategiya və Dizayn</h4>
+                            <p data-key="step2_text">Ən effektiv həlli dizayn edir, layihə planını və gözlənilən nəticələri təqdim edirik.</p>
+                        </div>
+                        <div class="step-arrow">→</div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h4 data-key="step3_title">Tətbiq və İnteqrasiya</h4>
+                            <p data-key="step3_text">Həlləri çevik metodologiya ilə hazırlayır, test edir və mövcud sistemlərlə problemsiz inteqrasiya edirik.</p>
+                        </div>
+                        <div class="step-arrow">→</div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h4 data-key="step4_title">Dəstək və Davamlılıq</h4>
+                            <p data-key="step4_text">Sistemlərin davamlı işini təmin edir, istifadəçilərə dəstək göstərir və daimi optimallaşdırma aparırıq.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 5: OUR TECHNOLOGIES -->
+            <section id="tech" class="slide">
+                <div class="slide-content">
+                    <h2 data-key="tech_title">İstifadə Etdiyimiz Texnologiyalar</h2>
+                    <p class="tech-subtitle" data-key="tech_subtitle">Biznes məqsədlərinə çatmaq üçün sənayenin qabaqcıl alətlərindən istifadə edirik.</p>
+                    <div class="tech-grid">
+                        <div class="tech-item"><span class="tech-category" data-key="tech_cat1">Avtomatlaşdırma (RPA)</span><span class="tech-tools">UiPath, Power Automate</span></div>
+                        <div class="tech-item"><span class="tech-category" data-key="tech_cat2">Data və Analitika</span><span class="tech-tools">Power BI, SQL, Python</span></div>
+                        <div class="tech-item"><span class="tech-category" data-key="tech_cat3">Əməkdaşlıq və Layihə</span><span class="tech-tools">Jira, Confluence, MS Teams</span></div>
+                        <div class="tech-item"><span class="tech-category" data-key="tech_cat4">Low-Code/No-Code</span><span class="tech-tools">Power Apps, Appian</span></div>
+                        <div class="tech-item"><span class="tech-category" data-key="tech_cat5">Development</span><span class="tech-tools">JavaScript, C#, .NET</span></div>
+                        <div class="tech-item"><span class="tech-category" data-key="tech_cat6">Cloud Sistemlər</span><span class="tech-tools">Azure, AWS</span></div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- SLIDE 6: TEAM -->
+            <section id="team" class="slide">
+                <div class="slide-content">
+                    <h2 data-key="team_title">Komandamızın Strukturu: Çevik və Düz İyerarxiya</h2>
+                    <div class="org-chart">
+                        <!-- Head -->
+                        <div class="level">
+                            <div class="role-card head">
+                                <div class="role-title" data-key="role_head">Şöbə Rəhbəri</div>
+                                <div class="role-desc" data-key="role_head_desc">Strateji vizyon, komanda liderliyi və biznes tərəfdaşlığı.</div>
+                            </div>
+                        </div>
+
+                        <!-- Connector from Head -->
+                        <div class="connector-line vertical" style="height: 40px;"></div>
+                        <!-- Main horizontal connector -->
+                        <div class="connector-line horizontal" style="width: 80%; left: 10%;"></div>
+                        <!-- Connectors to Subordinates -->
+                        <div class="subordinate-connectors">
+                            <div class="connector-line vertical" style="height: 40px; left: 15%;"></div>
+                            <div class="connector-line vertical" style="height: 40px; left: 38%;"></div>
+                            <div class="connector-line vertical" style="height: 40px; left: 62%;"></div>
+                            <div class="connector-line vertical" style="height: 40px; left: 85%;"></div>
+                        </div>
+
+                        <!-- Subordinates -->
+                        <div class="level subordinates">
+                            <div class="role-card expert">
+                                <div class="role-title" data-key="role_expert">Ekspert</div>
+                                <div class="role-desc" data-key="role_expert_desc">Texniki memarlıq, R&D.</div>
+                            </div>
+                            <div class="role-card senior">
+                                <div class="role-title" data-key="role_senior_1">Böyük Mütəxəssis</div>
+                                <div class="role-desc" data-key="role_senior_desc_1">Avtomatlaşdırma layihələri.</div>
+                            </div>
+                            <div class="role-card senior">
+                                <div class="role-title" data-key="role_senior_2">Böyük Mütəxəssis</div>
+                                <div class="role-desc" data-key="role_senior_desc_2">Rəqəmsallaşdırma.</div>
+                            </div>
+                             <div class="role-card specialist">
+                                <div class="role-title" data-key="role_specialist">Mütəxəssis</div>
+                                <div class="role-desc" data-key="role_specialist_desc">Sistem dəstəyi, icra.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <button id="next-btn" data-key="next_btn">Növbəti</button>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
